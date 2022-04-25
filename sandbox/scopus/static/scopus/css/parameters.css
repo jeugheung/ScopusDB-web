@@ -1,0 +1,25 @@
+.parameters {
+    padding: 1.5rem 2rem;
+}
+
+.parameters .parameters-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.parameters-nav p {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.parameters-nav p:hover {
+    color: #e9711c;
+    border-bottom: 1px solid #000;
+}
+
+.parameters-nav p:hover:after {
+    opacity: 1;
+}

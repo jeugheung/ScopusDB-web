@@ -1,0 +1,36 @@
+.title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #f1f5f7;
+    padding: 1.5rem 2rem;
+    font-family: Calibri;
+}
+
+.title-block h1 {
+    line-height: 1.25;
+    margin: 0;
+    margin-bottom: 0.2rem;
+    font-size: 1.875rem;
+}
+
+.title-block p {
+    color: #007398;
+}
+
+.title-block .title-block--country {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.title-block .title-block--year {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}

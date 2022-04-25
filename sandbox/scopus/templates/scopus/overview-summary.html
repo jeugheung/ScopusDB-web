@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'scopus/css/all.css' %}">
+    <title>Summary</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">OndreyDev</div>
+            <nav class="nav">
+                <a class="nav__link" href="/about">About</a>
+                <a class="nav__link" href="/overview/summary">Overview</a>
+                <a class="nav__link" href="#">Benchmarking</a>
+                <a class="nav__link" href="#">Researchers</a>
+                <a class="nav__link" href="#">News</a>
+                <a class="nav__link" href="#">Contacts</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="title-block">
+    <h1>Satbayev University</h1>
+    <span class="title-block--country">
+        <img src="https://www.scival.com/static/images/flags/kz.svg" alt="">
+        <p>
+            Kazakhstan
+        </p>
+    </span>
+    <span class="title-block--year">
+        <p>2016-2021</p>
+        <p>Data Sources</p>
+    </span>
+</div>
+<div class="parameters">
+    <div class="parameters-nav">
+        <a href="/overview/summary"><p style="color: #e9711c; border-bottom: 1px solid #000">Summary</p></a>
+        <a href="/overview/rankings"><p>Rankings</p></a>
+        <a href="/overview/collaboration"><p>Collaboration</p></a>
+        <a href="/overview/published"><p>Published</p></a>
+        <a href="/overview/viewed"><p>Viewed</p></a>
+        <a href="/overview/cited"><p>Cited</p></a>
+    </div>
+    <div class="parameters-content">
+<!--    тут то шо внизу-->
+    </div>
+</div>
+<div class="second-index">
+    <h1>Overall research performance</h1>
+    <table class="tab">
+  <tr>
+    <td class="first">Scholarly Output</td>
+    <td class="first">Authors</td>
+    <td class="first">Field-Weighted Citation Impact</td>
+  </tr>
+  <tr>
+    <td class="second">1,861</td>
+    <td class="second">1,570</td>
+    <td class="second">0.60</td>
+  </tr>
+</table>
+<table class="tab">
+  <tr>
+    <td class="first">Citation Count</td>
+    <td class="first">Citations per Publication</td>
+    <td class="first">h5-index</td>
+  </tr>
+  <tr>
+    <td class="second">5,833</td>
+    <td class="second">3.1</td>
+    <td class="second">22</td>
+  </tr>
+</table>
+<style>
+.tab {border-collapse:collapse;}
+.tab .first {border-left:1px solid #000;}
+.tab .second {border-left:1px solid #000;}
+</style>
+</div>
+<div class="first graph">
+    <h1>Publications by Subject Area</h1>
+</div>
+
+<div class="chart-test">
+    <canvas id ="myChart" style="width:100%;max-width:600px"></canvas>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script>
+var xValues = ["Computer science", "Mathematics", "Physics", "Chemistry", "Material science"];
+var yValues = [283, 175, 368, 186, 380];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Publications by Subject Area"
+    }
+  }
+});
+</script>
+
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+
+
+</body>
+</html>

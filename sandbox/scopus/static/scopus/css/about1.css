@@ -1,0 +1,88 @@
+.section_header {
+width: 100%;
+max-width: 950px;
+margin: 10 200 50px;
+background: url("../images/background.jpg") center no-repeat;
+}
+
+.container_background {
+background: url("../images/background.jpg") center no-repeat;
+
+}
+
+.intro {
+display: flex;
+justify-content: space-between;
+background: url("../images/background.jpg") center no-repeat;
+}
+
+.welcome {
+width: 100%;
+max-width: 1475px;
+margin: 0 auto;
+
+}
+
+.intro_item {
+width: 100%;
+}
+
+.intro_header {
+position: relative;
+margin-bottom: 14px;
+}
+
+.intro_photo {
+display: block;
+max-width: 30%;
+height: auto;
+}
+
+.intro_title {
+margin-bottom: 10px;
+font-size: 24px;
+color: #000000;
+text-transofme: uppercase;
+}
+
+.intro_title a {
+color: #FFFF00;
+}
+
+.intro_title a:hover {
+text-decoration: underline;
+}
+
+.intro_text {
+font-size: 18px;
+color: #000000;
+}
+
+.footer {
+padding-top: 70px;
+background-color: #FFEBCD;
+}
+
+.footer_inner {
+display: flex;
+justify-content: space-between;
+padding-bottom: 20px;
+}
+
+.footer_logo {
+margin-bottom: 30px;
+font-size: 40px;
+font-weight: 200;
+}
+
+.footer_col_first {
+width: 40%;
+}
+
+.footer_col_second {
+width: 40%;
+}
+
+.footer_text {
+font-size: 20px;
+}

@@ -2,25 +2,17 @@
 width: 100%;
 max-width: 950px;
 margin: 10 200 50px;
-background: url("../images/background.jpg") center no-repeat;
-}
-
-.container_background {
-background: url("../images/background.jpg") center no-repeat;
-
 }
 
 .intro {
 display: flex;
 justify-content: space-between;
-background: url("../images/background.jpg") center no-repeat;
 }
 
 .welcome {
 width: 100%;
 max-width: 1475px;
 margin: 0 auto;
-
 }
 
 .intro_item {
@@ -60,7 +52,7 @@ color: #000000;
 
 .footer {
 padding-top: 70px;
-background-color: #FFEBCD;
+background-color: #F0F8FF;
 }
 
 .footer_inner {

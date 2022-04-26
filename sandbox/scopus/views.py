@@ -26,3 +26,6 @@ def overviewViewed(request):
 def overviewCited(request):
     return render(request, 'scopus/overview-cited.html')
 
+def news(request):
+    return render(request, 'scopus/news.html')
+

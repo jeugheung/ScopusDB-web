@@ -15,7 +15,7 @@ body {
 }
 
 .header {
-    background-color: #F0F8FF;
+    background-color: #24292F;
     padding-top: 30px;
     width: 100%;
     position: sticky;
@@ -76,3 +76,4 @@ body {
 .nav__link:hover:after {
     opacity: 1;
 }
+

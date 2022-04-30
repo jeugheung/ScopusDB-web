@@ -7,7 +7,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 50px;
+    margin: 0 20px;
+    font-size: 1.4rem;
 }
 
 .parameters-nav p {
@@ -16,8 +18,8 @@
 }
 
 .parameters-nav p:hover {
-    color: #e9711c;
-    border-bottom: 1px solid #000;
+    color: #000;
+    border-bottom: 2px solid #000;
 }
 
 .parameters-nav p:hover:after {

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'scopus/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'scopus/css/researchers.css' %}">
+    <title>Researchers</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">OndreyDev</div>
+            <nav class="nav">
+                <a class="nav__link" href="/about">About</a>
+                <a class="nav__link" href="/overview/summary">Overview</a>
+                <a class="nav__link" href="/benchmarking">Benchmarking</a>
+                <a class="nav__link" href="/researchers">Researchers</a>
+                <a class="nav__link" href="/news">News</a>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="authors">
+    <h2>Authors</h2>
+    <p>Top 500 authors, by Scholarly Output at Satbayev University over the period 2016 to 2021.
+    Note that some authors may no longer be affiliated with Satbayev University.</p>
+</div>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Scholarly Output</th>
+            <th>Most recent Publication</th>
+            <th>Citations</th>
+            <th>h-index</th>
+
+        </tr>
+    </thead>
+    {% for res in researchers_numbers %}
+    <tbody>
+        <tr>
+            <td>{{ res.number }}</td>
+            <td>{{ res.name }}</td>
+            <td>{{ res.sch_output }}</td>
+            <td>{{ res.year }}</td>
+            <td>{{ res.citations }}</td>
+            <td>{{ res.h_index }}</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -14,10 +14,9 @@
             <nav class="nav">
                 <a class="nav__link" href="/about">About</a>
                 <a class="nav__link" href="/overview/summary">Overview</a>
-                <a class="nav__link" href="#">Benchmarking</a>
-                <a class="nav__link" href="#">Researchers</a>
-                <a class="nav__link" href="#">News</a>
-                <a class="nav__link" href="#">Contacts</a>
+                <a class="nav__link" href="/benchmarking">Benchmarking</a>
+                <a class="nav__link" href="/researchers">Researchers</a>
+                <a class="nav__link" href="/news">News</a>
             </nav>
         </div>
     </div>
@@ -49,5 +48,174 @@
     </div>
 </div>
 <h1>Cited page</h1>
+
+<div class="container">
+    <div class="chart1">
+    <div class="number_pub1">
+<h2>5,973 number of citations received by publications at Satbayev University</h2>
+        </div>
+
+    <canvas id="bar-chart" width="350" height="200"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script> new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["2016", "2017", "2018", "2019", "2020", "2021"],
+      datasets: [
+        {
+          label: "Citation Count",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850", "#6970d5"],
+          data: [1004,1500,1405,1097,725,242]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Citation Count'
+      }
+    }
+});
+</script>
+</div>
+
+<div class="chart2">
+    <div class="number_pub2">
+<h2>3.2 average number of citations per publication at Satbayev University</h2>
+        </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script> var barChartData = {
+  labels: [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+
+  ],
+  datasets: [
+    {
+      label: "Citations per Publication",
+      backgroundColor: "#3cba9f",
+      borderColor: "#3cba9f",
+      borderWidth: 1,
+      data: [3.6,4.2,5.7,3.6,2.0,0.7]
+    }
+  ]
+};
+
+var chartOptions = {
+  responsive: true,
+  legend: {
+    position: "top"
+  },
+  title: {
+    display: true,
+    text: "Citations per Publication"
+  },
+  scales: {
+    yAxes: [{
+      ticks: {
+        beginAtZero: true
+      }
+    }]
+  }
+}
+
+window.onload = function() {
+  var ctx = document.getElementById("canvas").getContext("2d");
+  window.myBar = new Chart(ctx, {
+    type: "bar",
+    data: barChartData,
+    options: chartOptions
+  });
+};
+
+</script>
+</div>
+
+
+<div class="chart3">
+    <div class="number_pub3">
+        <h2>0.59 average Field-Weighted Citation Impact of Satbayev University</h2>
+    </div>
+    <canvas id="bar-chart-horizontal" width="800" height="450"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script>
+        new Chart(document.getElementById("bar-chart-horizontal"), {
+    type: 'horizontalBar',
+    data: {
+      labels: ["2016", "2017", "2018", "2019", "2020", "2021"],
+      datasets: [
+        {
+          label: "Field-Weighted Citation Impact",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#6970d5"],
+          data: [0.52,0.73,0.51,0.79,0.55,0.43]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Field-Weighted Citation Impact'
+      }
+    }
+});
+    </script>
+</div>
+</div>
+
+<style>
+
+.container {
+justify-content: space-between;
+display: flex;
+}
+
+    .chart1 {
+width: 500px;
+height: 250px;
+margin-left: 45px;
+margin-top: 10px;
+
+}
+.number_pub1 {
+text-align: right;
+margin: 50px;
+}
+
+ .chart2 {
+width: 600px;
+height: 300px;
+margin-top: 10px;
+
+}
+
+.number_pub2 {
+text-align: right;
+margin: 50px;
+}
+
+   .chart3 {
+width: 500px;
+height: 250px;
+margin-right: 45px;
+margin-top: 10px;
+
+}
+.number_pub3 {
+text-align: right;
+margin: 50px;
+
+}
+</style>
+
 </body>
 </html>

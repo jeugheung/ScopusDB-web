@@ -11,4 +11,6 @@ urlpatterns = [
     path('overview/viewed', overviewViewed),
     path('overview/cited', overviewCited),
     path('news', news),
+    path('researchers', researchers),
+    path('benchmarking', benchmarking),
 ]

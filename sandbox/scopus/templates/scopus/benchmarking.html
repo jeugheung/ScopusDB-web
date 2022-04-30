@@ -1,10 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'scopus/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'scopus/css/benchmarking.css' %}">
+    <title>Benchmarking</title>
 </head>
 <body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">OndreyDev</div>
+            <nav class="nav">
+                <a class="nav__link" href="/about">About</a>
+                <a class="nav__link" href="/overview/summary">Overview</a>
+                <a class="nav__link" href="/benchmarking">Benchmarking</a>
+                <a class="nav__link" href="/researchers">Researchers</a>
+                <a class="nav__link" href="/news">News</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="chart">
+    <canvas id="line-chart" width="800" height="450"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script>
+        new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: [1996,1998,2000,2002,2004,2006,2008,2010,2012,2014,2016,2018,2020,2022],
+    datasets: [{
+        data: [13,10,18,32,30,24,28,43,68,186,276,245,367,97],
+        label: "Satbayev University",
+        borderColor: "#3e95cd",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Scholarly Output'
+    }
+  }
+});
+    </script>
+        </div>
+
+<table>
+<tr>
+    <th>Entity</th>
+    <th>1996</th>
+    <th>1997</th>
+    <th>1998</th>
+    <th>1999</th>
+    <th>2000</th>
+    <th>2001</th>
+    <th>2002</th>
+    <th>2003</th>
+    <th>2004</th>
+    <th>2005</th>
+    <th>2006</th>
+    <th>2007</th>
+    <th>2008</th>
+    <th>2009</th>
+    <th>2010</th>
+    <th>2011</th>
+    <th>2012</th>
+    <th>2013</th>
+    <th>2014</th>
+    <th>2015</th>
+    <th>2016</th>
+    <th>2017</th>
+    <th>2018</th>
+    <th>2019</th>
+    <th>2020</th>
+    <th>2021</th>
+    <th>2022</th>
+    <th>Overall</th>
+</tr>
+<tr>
+    <td>Satbayev University</td>
+    <td>13</td>
+    <td>9</td>
+    <td>10</td>
+    <td>12</td>
+    <td>18</td>
+    <td>27</td>
+    <td>32</td>
+    <td>30</td>
+    <td>30</td>
+    <td>32</td>
+    <td>24</td>
+    <td>36</td>
+    <td>28</td>
+    <td>51</td>
+    <td>43</td>
+    <td>39</td>
+    <td>68</td>
+    <td>113</td>
+    <td>186</td>
+    <td>261</td>
+    <td>276</td>
+    <td>354</td>
+    <td>245</td>
+    <td>307</td>
+    <td>367</td>
+    <td>324</td>
+    <td>97</td>
+    <td>3,032</td>
+</tr>
+</table>
+
+<style>
+    .chart {
+width: 900px;
+height: 700px;
+padding-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.table {
+margin-left: auto;
+margin-right: auto;
+}
+
+th {
+  font-weight: normal;
+  border-bottom: 2px solid #6678b1;
+  border-right: 30px solid white;
+  border-left: 30px solid white;
+  color: #039;
+  padding: 8px 2px;
+}
+td {
+  border-right: 30px solid white;
+  border-left: 30px solid white;
+  color: #669;
+  padding: 12px 2px;
+}
+
+</style>
 
 </body>
 </html>
+

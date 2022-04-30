@@ -14,10 +14,9 @@
             <nav class="nav">
                 <a class="nav__link" href="/about">About</a>
                 <a class="nav__link" href="/overview/summary">Overview</a>
-                <a class="nav__link" href="#">Benchmarking</a>
-                <a class="nav__link" href="#">Researchers</a>
-                <a class="nav__link" href="#">News</a>
-                <a class="nav__link" href="#">Contacts</a>
+                <a class="nav__link" href="/benchmarking">Benchmarking</a>
+                <a class="nav__link" href="/researchers">Researchers</a>
+                <a class="nav__link" href="/news">News</a>
             </nav>
         </div>
     </div>
@@ -49,5 +48,229 @@
     </div>
 </div>
 <h1>Viewed page</h1>
+
+<div class="container1">
+    <div class="chart1">
+    <div class="number_pub1">
+<h2>143,482 number of Scopus views received by publications at Satbayev University</h2>
+        </div>
+
+    <canvas id="bar-chart" width="350" height="200"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script> new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["2016", "2017", "2018", "2019", "2020", "2021"],
+      datasets: [
+        {
+          label: "Views count",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850", "#6970d5"],
+          data: [20587,28959,22316,29724,30129,11767]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Views count'
+      }
+    }
+});
+</script>
+</div>
+
+
+<div class="chart2">
+    <div class="number_pub2">
+<h2>1,352 (72.2%) number of publications in the top 10% most viewed publications worldwide</h2>
+        </div>
+
+   <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script> new Chart(document.getElementById("bar-chart-grouped"), {
+    type: 'bar',
+    data: {
+      labels: ["2016", "2017", "2018", "2019", "2020", "2021"],
+      datasets: [
+        {
+          label: "in top 1% most viewed",
+          backgroundColor: "#3e95cd",
+          data: [2.2,17.5,33.5,61.2,51.2,14.8]
+        }, {
+          label: "in top 10% most viewed",
+          backgroundColor: "#8e5ea2",
+          data: [19.2,68.1,94.3,97.4,94.0,56.5]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Outputs in Top Citation Percentiles'
+      }
+    }
+});
+</script>
+</div>
+</div>
+
+<div class="container2">
+    <div class="chart3">
+    <div class="number_pub3">
+        <h2>76.6 average number of Scopus views per publication at Satbayev University</h2>
+    </div>
+    <canvas id="bar-chart-horizontal" width="800" height="450"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script>
+        new Chart(document.getElementById("bar-chart-horizontal"), {
+    type: 'horizontalBar',
+    data: {
+      labels: ["2016", "2017", "2018", "2019", "2020", "2021"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#6970d5"],
+          data: [74.6,81.8,91.1,96.8,82.1,36.3]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Views per Publication'
+      }
+    }
+});
+    </script>
+</div>
+
+<div class="chart4">
+    <div class="number_pub4">
+<h2>73.69 average Field-Weighted Views Impact of Satbayev University</h2>
+        </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script> var barChartData = {
+  labels: [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+
+  ],
+  datasets: [
+    {
+      label: "Field-Weighted Views Impact of Satbayev University",
+      backgroundColor: "#3e95cd",
+      borderColor: "#3e95cd",
+      borderWidth: 1,
+      data: [1.36,3.15,4.14,5.10,5.02,3.05]
+    }
+  ]
+};
+
+var chartOptions = {
+  responsive: true,
+  legend: {
+    position: "top"
+  },
+  title: {
+    display: true,
+    text: "Field-Weighted Views Impact"
+  },
+  scales: {
+    yAxes: [{
+      ticks: {
+        beginAtZero: true
+      }
+    }]
+  }
+}
+
+window.onload = function() {
+  var ctx = document.getElementById("canvas").getContext("2d");
+  window.myBar = new Chart(ctx, {
+    type: "bar",
+    data: barChartData,
+    options: chartOptions
+  });
+};
+
+</script>
+</div>
+</div>
+
+
+<style>
+.container1 {
+justify-content: space-between;
+display: flex;
+}
+
+.container2 {
+display: flex;
+justify-content: space-between;
+}
+
+    .chart1 {
+width: 700px;
+height: 350px;
+margin-left: 45px;
+margin-top: 10px;
+
+}
+.number_pub1 {
+text-align: right;
+margin: 50px;
+}
+ .chart2 {
+width: 700px;
+height: 350px;
+margin-right: 200px;
+margin-top: 10px;
+}
+
+.number_pub2 {
+text-align: right;
+padding-top: 70px;
+}
+
+   .chart3 {
+width: 700px;
+height: 350px;
+margin-left: 45px;
+margin-top: 10px;
+
+}
+.number_pub3 {
+text-align: right;
+padding-top: 200px;
+
+}
+
+  .chart4 {
+width: 700px;
+height: 350px;
+margin-right: 200px;
+margin-top: 10px;
+
+}
+.number_pub4 {
+text-align: right;
+padding-top: 200px;
+}
+
+
+
+</style>
+
 </body>
 </html>

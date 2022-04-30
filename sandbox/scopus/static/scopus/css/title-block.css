@@ -12,11 +12,12 @@
     line-height: 1.25;
     margin: 0;
     margin-bottom: 0.2rem;
-    font-size: 1.875rem;
+    font-size: 2.5rem;
 }
 
 .title-block p {
     color: #007398;
+    font-size: 1.2rem;
 }
 
 .title-block .title-block--country {

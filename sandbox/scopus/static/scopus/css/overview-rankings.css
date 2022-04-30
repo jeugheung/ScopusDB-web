@@ -1,0 +1,10 @@
+.container_header {
+width: 100%;
+max-width: 950px;
+margin: 10 200 50px;
+}
+
+.container_main {
+font-family: Serif;
+font-style: normal;
+}

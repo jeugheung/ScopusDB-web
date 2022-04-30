@@ -14,10 +14,9 @@
             <nav class="nav">
                 <a class="nav__link" href="/about">About</a>
                 <a class="nav__link" href="/overview/summary">Overview</a>
-                <a class="nav__link" href="#">Benchmarking</a>
-                <a class="nav__link" href="#">Researchers</a>
-                <a class="nav__link" href="#">News</a>
-                <a class="nav__link" href="#">Contacts</a>
+                <a class="nav__link" href="/benchmarking">Benchmarking</a>
+                <a class="nav__link" href="/researchers">Researchers</a>
+                <a class="nav__link" href="/news">News</a>
             </nav>
         </div>
     </div>
@@ -49,5 +48,187 @@
     </div>
 </div>
 <h1>Scolarships</h1>
+
+<div class="container">
+    <div class="chart1">
+    <div class="number_pub1">
+<h2>1,873 number of publications by authors at Satbayev University</h2>
+        </div>
+
+    <canvas id="bar-chart" width="350" height="200"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script> new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["2016", "2017", "2018", "2019", "2020", "2021"],
+      datasets: [
+        {
+          label: "Publications",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850", "#6970d5"],
+          data: [276, 354,245,307,367, 324]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Scholarly Output'
+      }
+    }
+});
+</script>
+</div>
+
+<div class="chart2">
+    <div class="number_pub2">
+<h2>115 (6.1%) number of publications in the top 10% most cited publications worldwide</h2>
+        </div>
+
+   <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script> new Chart(document.getElementById("bar-chart-grouped"), {
+    type: 'bar',
+    data: {
+      labels: ["2016", "2017", "2018", "2019", "2020", "2021"],
+      datasets: [
+        {
+          label: "in top 1% most cited",
+          backgroundColor: "#3e95cd",
+          data: [0.7,1.1,0.0,0.3,0.8,0.3]
+        }, {
+          label: "in top 10% most cited",
+          backgroundColor: "#8e5ea2",
+          data: [4.7,7.3,3.3,9.4,6.3,4.9]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Outputs in Top Citation Percentiles'
+      }
+    }
+});
+</script>
+</div>
+
+<div class="chart3">
+    <div class="number_pub3">
+<h2>70 (4.4%) number of publications in the top 10% journals by CiteScore</h2>
+        </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script> var barChartData = {
+  labels: [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+
+  ],
+  datasets: [
+    {
+      label: "in top 1% journals",
+      backgroundColor: "#e8c3b9",
+      borderColor: "#e8c3b9",
+      borderWidth: 1,
+      data: [0.9, 0.0, 0.5, 0.4, 0.0, 0.0]
+    },
+
+
+    {
+      label: "in top 10% journals",
+      backgroundColor: "#c45850",
+      borderColor: "#c45850",
+      borderWidth: 1,
+      data: [6.0, 1.9, 6.6, 3.3, 1.6, 8.1]
+    }
+  ]
+};
+
+var chartOptions = {
+  responsive: true,
+  legend: {
+    position: "top"
+  },
+  title: {
+    display: true,
+    text: "Publications in Top Journal Percentiles"
+  },
+  scales: {
+    yAxes: [{
+      ticks: {
+        beginAtZero: true
+      }
+    }]
+  }
+}
+
+window.onload = function() {
+  var ctx = document.getElementById("canvas").getContext("2d");
+  window.myBar = new Chart(ctx, {
+    type: "bar",
+    data: barChartData,
+    options: chartOptions
+  });
+};
+
+</script>
+</div>
+</div>
+
+<style>
+
+.container {
+justify-content: space-between;
+display: flex;
+}
+
+ .chart1 {
+width: 500px;
+height: 250px;
+margin-left: 45px;
+margin-top: 10px;
+}
+.number_pub1 {
+text-align: left;
+margin: 30px;
+display: flex;
+}
+ .chart2 {
+width: 500px;
+height: 250px;
+margin-top: 10px;
+}
+
+.number_pub2 {
+text-align: left;
+margin: 30px;
+display: flex;
+}
+
+ .chart3 {
+width: 550px;
+height: 350px;
+margin-right: 45px;
+margin-top: 10px;
+
+}
+
+.number_pub3 {
+text-align: left;
+margin: 30px;
+display: flex;
+}
+
+</style>
+
 </body>
 </html>

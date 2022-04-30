@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{% static 'scopus/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'scopus/css/overview-rankings.css' %}">
     <title>Rankings</title>
 </head>
 <body>
@@ -14,10 +15,9 @@
             <nav class="nav">
                 <a class="nav__link" href="/about">About</a>
                 <a class="nav__link" href="/overview/summary">Overview</a>
-                <a class="nav__link" href="#">Benchmarking</a>
-                <a class="nav__link" href="#">Researchers</a>
-                <a class="nav__link" href="#">News</a>
-                <a class="nav__link" href="#">Contacts</a>
+                <a class="nav__link" href="/benchmarking">Benchmarking</a>
+                <a class="nav__link" href="/researchers">Researchers</a>
+                <a class="nav__link" href="/news">News</a>
             </nav>
         </div>
     </div>
@@ -48,6 +48,84 @@
 
     </div>
 </div>
-<h1>QD AND THE</h1>
+<div class="container">
+    <div class="container_header">
+        <h1>Times Higher Education (THE) World University Rankings</h1>
+    </div>
+    <div class="container_year">
+        <h3>Ranking year 2022</h3>
+        <div class="container_main">
+            <h1>Overall Rank and Publications considered in THE Rankings</h1>
+        <table class="tab1">
+  <tr>
+    <td class="first1">1201+</td>
+    <td class="second1">1,383</td>
+    <td class="third1">681</td>
+  </tr>
+  <tr>
+    <td class="first">World University Rankings 2022</td>
+    <td class="second">Scholarly Output</td>
+    <td class="third">International Collaboration</td>
+  </tr>
+</table>
+
+        <style type="text/css">
+  table { width: 100%; }
+  td.first { width: 20%; }
+  td.second { width: 20%; }
+  td.third { width: 20% }
+  .tab1 {margin: 40px 40px;}
+  .tab1 .first1 {border-left:3px solid #000000;}
+  .tab1 .second1 {border-left:3px solid #000000;}
+  .tab1 .third1 {border-left:3px solid #000000;}
+  .tab1 .first {border-left:3px solid #000000;}
+  .tab1 .second {border-left:3px solid #000000;}
+  .tab1 .third {border-left:3px solid #000000;}
+  .tab1 {float: left;}
+  .tab1 {border-collapse:collapse;}
+
+  .tab1 .first1 { font-size: 1.8rem;font-weight: bold }
+  .tab1 .second1 { font-size: 1.8rem;font-weight: bold }
+  .tab1 .third1 { font-size: 1.8rem;font-weight: bold }
+
+  .tab1 .first { font-size: 1.2rem }
+  .tab1 .second { font-size: 1.2rem }
+  .tab1 .third { font-size: 1.2rem }
+
+  tr, td {
+   padding: 20px 20px;
+}
+
+.container_header {
+width: 100%;
+max-width: 950px;
+margin: 10 200 50px;
+padding: 5px;
+text-align: left;
+color: #F4A460;
+}
+
+.container_year {
+font-family: Serif;
+font-style: normal;
+text-align: left;
+padding: 5px;
+margin: auto;
+}
+
+.container_main {
+width: 100%;
+font-family: Serif;
+font-style: normal;
+text-align: left;
+padding: 5px;
+margin: auto;
+}
+
+  </style>
+    </div>
+</div>
+
+</div>
 </body>
 </html>

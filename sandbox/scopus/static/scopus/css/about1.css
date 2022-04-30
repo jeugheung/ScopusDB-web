@@ -38,7 +38,7 @@ text-transofme: uppercase;
 }
 
 .intro_title a {
-color: #FFFF00;
+color: #FFF00;
 }
 
 .intro_title a:hover {
@@ -52,7 +52,7 @@ color: #000000;
 
 .footer {
 padding-top: 70px;
-background-color: #F0F8FF;
+background-color: #f1f5f7;
 }
 
 .footer_inner {

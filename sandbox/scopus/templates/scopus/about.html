@@ -15,10 +15,9 @@
             <nav class="nav">
                 <a class="nav__link" href="/about">About</a>
                 <a class="nav__link" href="/overview/summary">Overview</a>
-                <a class="nav__link" href="#">Benchmarking</a>
-                <a class="nav__link" href="#">Researchers</a>
-                <a class="nav__link" href="#">News</a>
-                <a class="nav__link" href="#">Contacts</a>
+                <a class="nav__link" href="/benchmarking">Benchmarking</a>
+                <a class="nav__link" href="/researchers">Researchers</a>
+                <a class="nav__link" href="/news">News</a>
             </nav>
         </div>
     </div>
@@ -29,14 +28,11 @@
         <div class="section_header">
            <h1>Welcome to Ondreydev</h1>
         </div>
-        <div class="container_background">
-
-        </div>
 
     <div class="intro">
     <div class="intro_item">
         <div class="intro_header">
-            <a href="#">
+            <a href="/overview/summary">
             <img class="intro_photo" src="{% static 'scopus/images/graph.png' %}" alt="">
                 </a>
         </div>
@@ -57,7 +53,7 @@
         </div>
         <div class="intro_content">
             <div class="intro_title">
-                <a href="#">Benchmarking</a>
+                <a href="/benchmarking">Benchmarking</a>
             </div>
             <div class="intro_text">Compare and benchmark the research performance of anything in SciVal.</div>
         </div>
@@ -72,13 +68,27 @@
         </div>
         <div class="intro_content">
             <div class="intro_title">
-                <a href="#">Researshes</a>
+                <a href="/researchers">Researshes</a>
             </div>
             <div class="intro_text">View the research performance of Researchers, Institutions, Countries and more.</div>
         </div>
 
     </div>
+
+        <div class="intro_item">
+        <div class="intro_header">
+            <a href="#">
+            <img class="intro_photo" src="{% static 'scopus/images/news.png' %}" alt="">
+                </a>
         </div>
+        <div class="intro_content">
+            <div class="intro_title">
+                <a href="/news">News</a>
+            </div>
+            <div class="intro_text">Compare and benchmark the research performance of anything in SciVal.</div>
+        </div>
+
+    </div>
 
 </div>
 </section>

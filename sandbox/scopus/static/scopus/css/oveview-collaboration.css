@@ -1,0 +1,39 @@
+.intro {
+
+justify-content: space-between;
+}
+
+.container {
+width: 10%;
+}
+
+.first graph {
+width: 100%;
+max-width: 950px;
+margin: 10 200 50px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 70px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #f1f5f7;
+    color: #000;
+    text-align: left;
+    border-bottom: 2px solid #24292F
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 20px 110px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}

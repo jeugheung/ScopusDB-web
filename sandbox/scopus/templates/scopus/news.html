@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{% static 'scopus/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'scopus/css/news.css' %}">
     <title>Rankings</title>
 </head>
 <body>
@@ -14,11 +15,81 @@
             <nav class="nav">
                 <a class="nav__link" href="/about">About</a>
                 <a class="nav__link" href="/overview/summary">Overview</a>
-                <a class="nav__link" href="#">Benchmarking</a>
-                <a class="nav__link" href="#">Researchers</a>
-                <a class="nav__link" href="#">News</a>
-                <a class="nav__link" href="#">Contacts</a>
+                <a class="nav__link" href="/benchmarking">Benchmarking</a>
+                <a class="nav__link" href="/researchers">Researchers</a>
+                <a class="nav__link" href="/news">News</a>
             </nav>
         </div>
     </div>
 </header>
+<div class="blog-section">
+    <div class="section-content blog">
+        <div class="title">
+            <h2>News</h2>
+            <p>Новости о рейтинге Satbayev University</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="image-section">
+                    <img src="{% static 'scopus/images/firstNews.jpg' %}">
+                </div>
+                <div class="article">
+                    <h4>Satbayev University занял 64-е место в рейтинге QS EECA</h4>
+                    <p>Satbayev University продолжает расти в мировых рейтингах. 15 декабря
+                    рейтинговое агентство QS (Quacquarelli Symonds) представило шестую версию
+                    рейтинга университетов QS Emerging Europe And Central Asia University Rankings
+                    2022. Satbayev University улучшил свои показатели, заняв 64-е место.
+                    </p>
+                </div>
+                <div class="blog-view">
+                    <a href="" class="button">Read more</a>
+                </div>
+                <div class="posted-date">
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <img src="{% static 'scopus/images/secondNews.jpg' %}">
+                </div>
+                <div class="article">
+                    <h4>Satbayev University вошел в рейтинг The Times Higher Education</h4>
+                    <p>Сегодня авторитетное британское издание Times Higher Education – лидер в
+                    области оценки качества деятельности высших учебных заведений,
+                    опубликовало всемирный рейтинг лучших исследовательских университетов.
+                    В рейтинг Times Higher Education World University Rankings 2021 вошли 3 казахстанских вуза
+                    </p>
+                </div>
+                <div class="blog-view">
+                    <a href="" class="button">Read more</a>
+                </div>
+                <div class="posted-date">
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <img src="{% static 'scopus/images/thirdNews.jpg' %}">
+                </div>
+                <div class="article">
+                    <h4>Впервые технический вуз РК вошел в глобальный рейтинг QS World University Rankings By Subject 2021</h4>
+                    <p>Satbayev University впервые в истории казахстанского образования вошел в один
+                    из самых престижных международных рейтингов QS WUR by Subject в
+                    предметной области Petroleum Engineering категории Engineering and Technology.
+                    Итоговым результатом университета в этом году стало 101-150 место в мировом рейтинге
+                    </p>
+                </div>
+                <div class="blog-view">
+                    <a href="" class="button">Read more</a>
+                </div>
+                <div class="posted-date">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
